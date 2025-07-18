@@ -1,0 +1,14 @@
+==206690== Memcheck, a memory error detector
+==206690== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==206690== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==206690== Command: ./bsq
+==206690== 
+==206690== 
+==206690== HEAP SUMMARY:
+==206690==     in use at exit: 0 bytes in 0 blocks
+==206690==   total heap usage: 2,664 allocs, 2,664 frees, 454,713,276 bytes allocated
+==206690== 
+==206690== All heap blocks were freed -- no leaks are possible
+==206690== 
+==206690== For lists of detected and suppressed errors, rerun with: -s
+==206690== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

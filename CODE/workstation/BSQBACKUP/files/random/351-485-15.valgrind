@@ -1,0 +1,14 @@
+==203119== Memcheck, a memory error detector
+==203119== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==203119== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==203119== Command: ./bsq
+==203119== 
+==203119== 
+==203119== HEAP SUMMARY:
+==203119==     in use at exit: 0 bytes in 0 blocks
+==203119==   total heap usage: 1,338 allocs, 1,338 frees, 114,832,038 bytes allocated
+==203119== 
+==203119== All heap blocks were freed -- no leaks are possible
+==203119== 
+==203119== For lists of detected and suppressed errors, rerun with: -s
+==203119== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

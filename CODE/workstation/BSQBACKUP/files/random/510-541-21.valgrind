@@ -1,0 +1,35 @@
+==62054== Memcheck, a memory error detector
+==62054== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==62054== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==62054== Command: ./bsq
+==62054== 
+==62054== 
+==62054== Process terminating with default action of signal 2 (SIGINT)
+==62054==    at 0x40123D: ft_strlen (in /home/mtaranti/workstation/BSQ/bsq)
+==62054==    by 0x40127C: ft_strncat (in /home/mtaranti/workstation/BSQ/bsq)
+==62054==    by 0x40173D: ft_read_fd (in /home/mtaranti/workstation/BSQ/bsq)
+==62054==    by 0x40178E: ft_read_stdin (in /home/mtaranti/workstation/BSQ/bsq)
+==62054==    by 0x4025BC: ft_handle_stdin (in /home/mtaranti/workstation/BSQ/bsq)
+==62054==    by 0x402694: main (in /home/mtaranti/workstation/BSQ/bsq)
+==62054== 
+==62054== HEAP SUMMARY:
+==62054==     in use at exit: 152,833 bytes in 1 blocks
+==62054==   total heap usage: 1,195 allocs, 1,194 frees, 91,318,442 bytes allocated
+==62054== 
+==62054== 152,833 bytes in 1 blocks are still reachable in loss record 1 of 1
+==62054==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==62054==    by 0x401295: ft_strncat (in /home/mtaranti/workstation/BSQ/bsq)
+==62054==    by 0x40173D: ft_read_fd (in /home/mtaranti/workstation/BSQ/bsq)
+==62054==    by 0x40178E: ft_read_stdin (in /home/mtaranti/workstation/BSQ/bsq)
+==62054==    by 0x4025BC: ft_handle_stdin (in /home/mtaranti/workstation/BSQ/bsq)
+==62054==    by 0x402694: main (in /home/mtaranti/workstation/BSQ/bsq)
+==62054== 
+==62054== LEAK SUMMARY:
+==62054==    definitely lost: 0 bytes in 0 blocks
+==62054==    indirectly lost: 0 bytes in 0 blocks
+==62054==      possibly lost: 0 bytes in 0 blocks
+==62054==    still reachable: 152,833 bytes in 1 blocks
+==62054==         suppressed: 0 bytes in 0 blocks
+==62054== 
+==62054== For lists of detected and suppressed errors, rerun with: -s
+==62054== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
